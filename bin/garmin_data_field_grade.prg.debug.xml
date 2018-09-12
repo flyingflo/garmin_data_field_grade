@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <pcToLineNum>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="26" pc="268435456" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="27" pc="268435460" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="28" pc="268435478" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="30" pc="268435491" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="31" pc="268435528" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="32" pc="268435553" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="33" pc="268435570" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="34" pc="268435606" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="3" lineNum="35" pc="268435616" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="42" pc="268435649" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="45" pc="268435653" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="46" pc="268435666" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="47" pc="268435689" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="48" pc="268435702" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="50" pc="268435714" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="51" pc="268435724" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="52" pc="268435746" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="53" pc="268435756" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="54" pc="268435769" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="56" pc="268435781" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="57" pc="268435792" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="58" pc="268435815" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="59" pc="268435836" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="61" pc="268435865" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="62" pc="268435875" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="63" pc="268435891" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="64" pc="268435907" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="65" pc="268435920" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="68" pc="268435932" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="69" pc="268435951" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="70" pc="268435971" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="72" pc="268435987" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="73" pc="268436003" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="75" pc="268436012" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="76" pc="268436039" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="78" pc="268436080" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="79" pc="268436096" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="80" pc="268436112" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="81" pc="268436146" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="82" pc="268436156" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="84" pc="268436181" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="85" pc="268436213" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="86" pc="268436240" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="87" pc="268436266" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="89" pc="268436285" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="90" pc="268436305" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="92" pc="268436321" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="95" pc="268436345" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeView.mc" id="4" lineNum="96" pc="268436368" symbol="compute"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="6" lineNum="5" pc="268436378" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="6" lineNum="6" pc="268436382" symbol="initialize"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="7" lineNum="10" pc="268436401" symbol="onStart"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="8" lineNum="14" pc="268436406" symbol="onStop"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="9" lineNum="18" pc="268436411" symbol="getInitialView"/>
+        <entry filename="/home/flo/workspace/garmin/data_field_grade/source/garmin_data_field_gradeApp.mc" id="9" lineNum="19" pc="268436415" symbol="getInitialView"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="15" symbol="_N"/>
+        <entry field="true" id="20" symbol="_div"/>
+        <entry id="9" object="true" symbol="garmin_data_field_gradeView"/>
+        <entry field="true" id="12" symbol="_m_ft"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="21" symbol="_way"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="18" symbol="_init"/>
+        <entry field="true" id="17" symbol="_h1"/>
+        <entry field="true" id="16" symbol="_h0"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8390132" symbol="gain"/>
+        <entry field="true" id="26" symbol="AppName"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="11" symbol="_taps"/>
+        <entry field="true" id="25" symbol="LauncherIcon"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="10" object="true" symbol="garmin_data_field_gradeApp"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="19" symbol="_div_i"/>
+        <entry id="24" module="true" symbol="Layouts"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8390129" symbol="coefficients"/>
+        <entry field="true" id="14" symbol="_fifo"/>
+        <entry id="23" module="true" symbol="Menus"/>
+        <entry field="true" id="13" symbol="_filter"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="22" symbol="grade_str"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435648" name="options" stackId="1" startPc="268435460"/>
+        <entry endPc="268435865" name="i" stackId="3" startPc="268435836"/>
+        <entry endPc="268436080" name="i" stackId="4" startPc="268436039"/>
+        <entry endPc="268436377" name="v" stackId="2" startPc="268435653"/>
+        <entry endPc="268436377" name="gf" stackId="7" startPc="268435653"/>
+        <entry endPc="268436377" name="g" stackId="5" startPc="268435653"/>
+        <entry endPc="268436377" name="y" stackId="6" startPc="268435653"/>
+        <entry endPc="268436378" name="info" stackId="1" startPc="268435649"/>
+        <entry endPc="268436406" name="state" stackId="1" startPc="268436401"/>
+        <entry endPc="268436411" name="state" stackId="1" startPc="268436406"/>
+    </localVars>
+    <annotations/>
+    <functions>
+        <functionEntry accessMode="public" name="initialize" parent="garmin_data_field_gradeView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="compute" parent="garmin_data_field_gradeView">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="garmin_data_field_gradeApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="garmin_data_field_gradeApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="garmin_data_field_gradeApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="garmin_data_field_gradeApp">
+            <documentation/>
+        </functionEntry>
+    </functions>
+    <dataEntryOffsetMappings>
+        <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry offset="166" parentId="globals" symbolId="garmin_data_field_gradeView" type="class"/>
+        <dataEntry offset="317" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="396" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="435" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="466" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="497" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="528" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="559" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="598" parentId="globals" symbolId="garmin_data_field_gradeApp" type="class"/>
+    </dataEntryOffsetMappings>
+</debugInfo>
