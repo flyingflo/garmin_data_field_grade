@@ -2,7 +2,7 @@ using Toybox.WatchUi;
 using Toybox.Math;
 
 
-class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
+class garmin_data_field_gradeView extends StandardDataField {
 	const _taps = [0.0134969236341 ,
 		0.0784508686231 ,
 		0.24086247424 ,
@@ -20,11 +20,10 @@ class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
 	var _div_i = 0;
 	const _div = 3;
 	var _way = 0;
-	var grade_str = "__";
 
     // Set the label of the data field here.
     function initialize() {
-        SimpleDataField.initialize();
+        StandardDataField.initialize();
         label = "Grade %";
 
         var options = {:coefficients => _taps, :gain => 1.0f};
@@ -44,14 +43,14 @@ class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
 		//info.altitude
 		if (info.altitude == null) {
 			System.println("info incomplete");
-			grade_str = "??";
-			return grade_str;
+			value = "??";
+			return value;
 		}
 		var v = info.currentSpeed;
 		if (!(v != null && v > 1.0f)) {
 			_init = true;
-			grade_str =  "__";
-			return grade_str;
+			value =  "__";
+			return value;
 		}
 		if (_init) {
 			System.println("init");
@@ -61,8 +60,8 @@ class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
 	  		_init = false;
 			_h0 = info.altitude;
 			_h1 = _h0;
-	  		grade_str = "__";
-	  		return grade_str;
+	  		value = "__";
+	  		return value;
 	  	}
 
   		_div_i++;
@@ -70,7 +69,7 @@ class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
 	    	_div_i = 0;
 	    } else {
 	    	_way += v;
-	    	return grade_str;
+	    	return value;
 	    }
         for (var i = 0; i < _N - 1; i++) {
         	_fifo[i] = _fifo[i+1];
@@ -87,12 +86,12 @@ class garmin_data_field_gradeView extends WatchUi.SimpleDataField {
         var gf = y[_N - 1];
 
 		if (gf.abs() < 0.11) {
-			grade_str = "0.0";
+			value = "0.0";
 		} else {
-			grade_str = gf.format("%+.1f");
+			value = gf.format("%+.1f");
 		}
 
         System.println("--");
-        return grade_str;
+        return value;
     }
 }
