@@ -3,17 +3,8 @@ using Toybox.Math;
 
 
 class garmin_data_field_gradeView extends StandardDataField {
-	const _taps = [0.0134969236341 ,
-		0.0784508686231 ,
-		0.24086247424 ,
-		0.334379467006 ,
-		0.24086247424 ,
-		0.0784508686231 ,
-		0.0134969236341];
-	const _m_ft = 0.3048f;
 	var _filter;
-	var _fifo =  null;
-	var _N = null;
+	const _filterlen = 5;
 	var _h0 = 0.0;
 	var _h1 = 0.0;
 	var _init = true;
@@ -26,12 +17,8 @@ class garmin_data_field_gradeView extends StandardDataField {
         StandardDataField.initialize();
         label = "Grade %";
 
-        var options = {:coefficients => _taps, :gain => 1.0f};
-  		_N = _taps.size();
-  		_fifo = new [_N];
-        _filter = new Math.FirFilter(options);
+        _filter = new AvgFilter(_filterlen, 0, 100 / _filterlen);
         _init = true;
-		System.println("fifo init" + _N);
     }
 
     // The given info object contains all the current workout
@@ -54,9 +41,7 @@ class garmin_data_field_gradeView extends StandardDataField {
 		}
 		if (_init) {
 			System.println("init");
-	  		for(var i = 0; i < _N; i++) {
-	  			_fifo[i] = 0.0f;
-	  		}
+			_filter.reset(0);
 	  		_init = false;
 			_h0 = info.altitude;
 			_h1 = _h0;
@@ -71,19 +56,13 @@ class garmin_data_field_gradeView extends StandardDataField {
 	    	_way += v;
 	    	return value;
 	    }
-        for (var i = 0; i < _N - 1; i++) {
-        	_fifo[i] = _fifo[i+1];
-    	}
 		_h1 = _h0;
 		_h0 = info.altitude;
-		var g = ((_h0 - _h1)*100.0f / _way);
+		var g = ((_h0 - _h1) / _way) *100;
     	_way = v;
-    	_fifo[_N - 1] = g;
 
-		System.println("x " + _fifo);
-        var y = _filter.apply(_fifo);
-        System.println("y " + y);
-        var gf = y[_N - 1];
+        var gi = _filter.push_back(g.toNumber());
+        var gf = gi.toFloat() / 100.0;
 
 		if (gf.abs() < 0.11) {
 			value = "0.0";
@@ -91,7 +70,6 @@ class garmin_data_field_gradeView extends StandardDataField {
 			value = gf.format("%+.1f");
 		}
 
-        System.println("--");
         return value;
     }
 }
