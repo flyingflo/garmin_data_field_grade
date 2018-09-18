@@ -1,6 +1,4 @@
 using Toybox.WatchUi;
-using Toybox.Math;
-
 
 class garmin_data_field_gradeView extends StandardDataField {
 	var _filter;
@@ -17,7 +15,7 @@ class garmin_data_field_gradeView extends StandardDataField {
         StandardDataField.initialize();
         label = "Grade %";
 
-        _filter = new AvgFilter(_filterlen, 0, 100 / _filterlen);
+        _filter = new AvgFilter(_filterlen, 0, 100.0 / _filterlen);
         _init = true;
     }
 
@@ -41,7 +39,7 @@ class garmin_data_field_gradeView extends StandardDataField {
 		}
 		if (_init) {
 			System.println("init");
-			_filter.reset(0);
+			_filter.reset(0.0);
 	  		_init = false;
 			_h0 = info.altitude;
 			_h1 = _h0;
@@ -58,11 +56,10 @@ class garmin_data_field_gradeView extends StandardDataField {
 	    }
 		_h1 = _h0;
 		_h0 = info.altitude;
-		var g = ((_h0 - _h1) / _way) *100;
+		var g = ((_h0 - _h1) / _way);
     	_way = v;
 
-        var gi = _filter.push_back(g.toNumber());
-        var gf = gi.toFloat() / 100.0;
+        var gf = _filter.push_back(g);
 
 		if (gf.abs() < 0.11) {
 			value = "0.0";
