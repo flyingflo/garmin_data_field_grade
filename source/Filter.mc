@@ -6,7 +6,7 @@ class AvgFilter {
 	hidden var _gain;
 	hidden var _y;
 	function initialize(len, val, gain) {
-		_N = len - 1;
+		_N = len;
 		_fifo = new [_N];
 		_gain = gain;
 		reset(val);
@@ -17,7 +17,7 @@ class AvgFilter {
 		  _fifo[i] = val;
   		}
   		// initialize the accumulator
-  		_y = (_N+1) * val;
+  		_y = _N * val;
 	}
 
 	function push_back(x) {
