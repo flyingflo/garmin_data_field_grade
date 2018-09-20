@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
+using DataFieldUtils;
 
-class garmin_data_field_gradeView extends StandardDataField {
+class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	var _filter;
 	const _filterlen = 5;
 	var _h0 = 0.0;
@@ -15,7 +16,7 @@ class garmin_data_field_gradeView extends StandardDataField {
         StandardDataField.initialize();
         label = "Grade %";
 
-        _filter = new AvgFilter(_filterlen, 0, 100.0 / _filterlen);
+        _filter = new DataFieldUtils.AvgFilter(_filterlen, 0, 100.0 / _filterlen);
         _init = true;
     }
 
