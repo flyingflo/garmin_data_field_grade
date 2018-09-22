@@ -3,7 +3,7 @@ using DataFieldUtils;
 
 class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	var _filter;
-	const _filterlen = 5;
+	var _filterlen;
 	var _h0 = 0.0;
 	var _h1 = 0.0;
 	var _init = true;
@@ -11,14 +11,26 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	const _div = 3;
 	var _way = 0;
 
-    // Set the label of the data field here.
+
+	function getFilterLen() {
+		var l = Application.Properties.getValue("filterlen");
+		System.println("filterlen " + l);
+		return l.toNumber();
+	}
+
+	// Set the label of the data field here.
     function initialize() {
         StandardDataField.initialize();
         label = "Grade %";
+        value = "_._";
 
+		dataInit();
+	}
+
+	function dataInit() {
+		_filterlen = getFilterLen();
         _filter = new DataFieldUtils.AvgFilter(_filterlen, 0, 100.0 / _filterlen);
         _init = true;
-        value = "_._";
     }
 
     // The given info object contains all the current workout

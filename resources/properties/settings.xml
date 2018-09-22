@@ -1,0 +1,11 @@
+<settings>
+	<setting propertyKey="@Properties.filterlen" title="@Strings.filterlenTitle"
+		prompt="@Strings.filterlenPrompt">
+		<settingConfig type="list">
+			<listEntry value="1">@Strings.filterlen1</listEntry>
+			<listEntry value="3">@Strings.filterlen3</listEntry>
+			<listEntry value="5">@Strings.filterlen5</listEntry>
+			<listEntry value="7">@Strings.filterlen7</listEntry>
+		</settingConfig>
+	</setting>
+</settings>

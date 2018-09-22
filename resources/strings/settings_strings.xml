@@ -1,0 +1,8 @@
+<strings>
+    <string id="filterlenTitle">Smoothing Filter Length</string>
+    <string id="filterlenPrompt">filter taps</string>
+    <string id="filterlen1">1 (fastest)</string>
+    <string id="filterlen3">3</string>
+    <string id="filterlen5">5</string>
+    <string id="filterlen7">7 (smoothest)</string>
+</strings>
