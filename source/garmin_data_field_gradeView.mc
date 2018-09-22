@@ -18,6 +18,7 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 
         _filter = new DataFieldUtils.AvgFilter(_filterlen, 0, 100.0 / _filterlen);
         _init = true;
+        value = "_._";
     }
 
     // The given info object contains all the current workout
@@ -33,33 +34,37 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 			return value;
 		}
 		var v = info.currentSpeed;
-		if (!(v != null && v > 1.0f)) {
+		if (v == null) {
+			v = 0;
 			_init = true;
-			value =  "__";
-			return value;
 		}
+  		_div_i++;
+  		var way;
+  		if (_div_i == _div) {
+	    	_div_i = 0;
+	    	way = _way;
+	    	_way = v;
+	    } else {
+	    	_way += v;
+	    	return value;
+	    }
 		if (_init) {
 			System.println("init");
 			_filter.reset(0.0);
 	  		_init = false;
 			_h0 = info.altitude;
 			_h1 = _h0;
-	  		value = "__";
+	  		value = "_._";
 	  		return value;
 	  	}
 
-  		_div_i++;
-  		if (_div_i == _div) {
-	    	_div_i = 0;
-	    } else {
-	    	_way += v;
-	    	return value;
-	    }
+		if (way < 3.0) {
+			value = "_._";
+			return value;
+		}
 		_h1 = _h0;
 		_h0 = info.altitude;
-		var g = ((_h0 - _h1) / _way);
-    	_way = v;
-
+		var g = ((_h0 - _h1) / way);
         var gf = _filter.push_back(g);
 
 		if (gf.abs() < 0.11) {
