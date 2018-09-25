@@ -60,20 +60,18 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	    	_way += v;
 	    	return value;
 	    }
+
+		if (way < 3.0) {
+			_init = true;
+			value = "_._";
+			return value;
+		}
 		if (_init) {
 			System.println("init");
 			_filter.reset(0.0);
 	  		_init = false;
 			_h0 = info.altitude;
-			_h1 = _h0;
-	  		value = "_._";
-	  		return value;
 	  	}
-
-		if (way < 3.0) {
-			value = "_._";
-			return value;
-		}
 		_h1 = _h0;
 		_h0 = info.altitude;
 		var g = ((_h0 - _h1) / way);
