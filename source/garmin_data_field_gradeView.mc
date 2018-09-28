@@ -61,7 +61,7 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	    	return value;
 	    }
 
-		if (way < 3.0) {
+		if (way < 3 || v < 1) {		// when almost stopped. React fast on v.
 			_init = true;
 			value = "_._";
 			return value;
