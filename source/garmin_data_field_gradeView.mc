@@ -21,6 +21,7 @@ class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	// Set the label of the data field here.
     function initialize() {
         StandardDataField.initialize();
+        _ref_value = "+00.0";
         label = "Grade %";
         value = "_._";
 
