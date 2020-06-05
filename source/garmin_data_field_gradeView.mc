@@ -1,7 +1,7 @@
 using Toybox.WatchUi;
-using DataFieldUtils.Base;
+using DataFieldUtils;
 
-class garmin_data_field_gradeView extends Base.StandardDataField {
+class garmin_data_field_gradeView extends DataFieldUtils.StandardDataField {
 	var _filter;
 	var _filterlen;
 	var _h0 = 0.0;

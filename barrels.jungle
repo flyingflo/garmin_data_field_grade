@@ -2,6 +2,5 @@
 # on the project and select "Configure Monkey Barrels".
 
 DataFieldUtils = [/home/flo/workspace/garmin/DataFieldUtils/monkey.jungle]
-base.DataFieldUtils.annotations = base;filter
 base.barrelPath = $(base.barrelPath);$(DataFieldUtils)
 
