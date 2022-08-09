@@ -11,6 +11,7 @@ class garmin_data_field_gradeView extends Base.StandardDataField {
 	const _div = 3;
 	var _way = 0;
 	var _vpostfix = "%";
+	var _formatstr = "%+.1f";
 
 
 	function getFilterLen() {
@@ -26,6 +27,11 @@ class garmin_data_field_gradeView extends Base.StandardDataField {
         label = "Grade";
         value = "_._"  + _vpostfix;
 
+		if (Application.Properties.getValue("plussign")) {
+			_formatstr = "%+.1f";
+		} else {
+			_formatstr = "%.1f";
+		}
 		dataInit();
 	}
 
@@ -82,7 +88,7 @@ class garmin_data_field_gradeView extends Base.StandardDataField {
 		if (gf.abs() < 0.11) {
 			value = "0.0"  + _vpostfix;
 		} else {
-			value = gf.format("%+.1f")  + _vpostfix;
+			value = gf.format(_formatstr)  + _vpostfix;
 		}
 
         return value;

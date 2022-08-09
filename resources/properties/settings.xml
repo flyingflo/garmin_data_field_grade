@@ -8,4 +8,7 @@
 			<listEntry value="7">@Strings.filterlen7</listEntry>
 		</settingConfig>
 	</setting>
+	<setting propertyKey="@Properties.plussign" title="@Strings.plussign">
+        <settingConfig type="boolean" />
+    </setting>
 </settings>

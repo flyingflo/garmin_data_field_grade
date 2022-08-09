@@ -1,3 +1,4 @@
 <properties>
     <property id="filterlen" type="number">3</property>
+    <property id="plussign" type="boolean">true</property>
 </properties>
